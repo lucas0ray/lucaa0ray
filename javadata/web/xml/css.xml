@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
-    <part id = "01" name="选择器">
-        <title>标签</title>
+    <part name="选择器">
+        <title>标签选择器</title>
         <format>标签名{}</format>
     </part>
-    <part id="02" name="选择器">
-        <title>属性</title>
+    <part name="选择器">
+        <title>属性选择器</title>
         <format>元素[属性 = '值']{}</format>
+    </part>
+    <part name="选择器">
+        <title>Id选择器</title>
+        <format>#id{}</format>
+    </part>
+    <part name="选择器">
+        <title>类选择器</title>
+        <format>.class{}</format>
+    </part>
+    <part name="选择器">
+        <title>分组选择器</title>
+        <format>div,span{}</format>
+    </part>
+    <part name="选择器">
+        <title>子孙后代选择器</title>
+        <format>div span{}</format>
+    </part>
+    <part name="选择器">
+        <title>子元素选择器</title>
+        <format>div>span{}</format>
+    </part>
+    <part name="选择器">
+        <title>伪类选择器</title>
+        <format>
+            a:VISITED{}----访问过
+            a:LINK{}----未访问
+            a:HOVER{}----悬停状态
+            a:ACTIVE{}----点击状态
+        </format>
+    </part>
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
     </part>
 </root>
