@@ -3,7 +3,7 @@ $(function(){
         var javadeta=$("#input-text").val()
         alert(javadeta)
         $.get({
-            type: "post",
+            type: "get",
             url: "xml/css.xml",
             dataType: "xml",
             success: function (xml) {
