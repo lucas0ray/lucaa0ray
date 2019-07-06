@@ -31,13 +31,13 @@ $(function(){
             dataType: "xml",
             success: function (xml) {
                 alert(javadeta)
-                $(xml).find("root").each(function() {
-                    var root = $(this);
-                    var name = root.attr("name")
+                $(xml).find("part").each(function() {
+                    var part = $(this);
+                    var name = part.attr("name")
                     alert(name)
                     if($.trim(name) == $.trim(javadeta)){
-                        var title = root.find("title").text();
-                        var format = root.find("format").text();
+                        var title = part.find("title").text();
+                        var format = part.find("format").text();
                         var html ='<div class="row">'
                         +'<div class="col-md-6">#{title}</div>'
                         +'<div class="col-md-6">#{format}</div>'
