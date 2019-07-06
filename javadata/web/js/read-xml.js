@@ -2,7 +2,7 @@ $(function(){
     $("#input-button").click(function(){
         var javadeta=$("#input-text").val()
         alert(javadeta)
-        $.ajax({
+        $.get({
             type: "post",
             url: "xml/css.xml",
             dataType: "xml",
