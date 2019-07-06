@@ -3,7 +3,7 @@ $(function(){
     $("#input-button").click(function(){
 
         var javadeta=$("#input-text").val()
-        var html ='<table class="table table-bordered"><tr><th>介绍</th><th>代码</th></tr></table>'
+        var html ='<table class="table table-bordered"  id="table-01"><tr><th>介绍</th><th>代码</th></tr></table>'
 
         $("#div-01").empty()
         $("#div-01").append(html)
@@ -28,7 +28,7 @@ $(function(){
                         html = html.replace(/#{title}/g,title)
                         html = html.replace(/#{format}/g,format)
                         
-                        $("#div-01").append(html)
+                        $("#table-01").append(html)
 
                     }
 
