@@ -4,7 +4,7 @@ $(function(){
         alert(javadeta)
         $.get({
             type: "get",
-            url: "xml/css.xml",
+            url: "javadata/web/xml/css.xml",
             dataType: "xml",
             success: function (xml) {
                 alert(javadeta)
