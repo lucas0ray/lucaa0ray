@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <part id = "01" name="选择器">
+        <title>标签</title>
+        <format>标签名{}</format>
+    </part>
+    <part id="02" name="选择器">
+        <title>属性</title>
+        <format>元素[属性 = '值']{}</format>
+    </part>
+</root>
