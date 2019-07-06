@@ -31,10 +31,10 @@
     <part name="选择器">
         <title>伪类选择器</title>
         <format>
-            a:VISITED{}----访问过
-            a:LINK{}----未访问
-            a:HOVER{}----悬停状态
-            a:ACTIVE{}----点击状态
+            a:VISITED{}----访问过&lt;br&gt;
+            a:LINK{}----未访问&lt;br&gt;
+            a:HOVER{}----悬停状态&lt;br&gt;
+            a:ACTIVE{}----点击状态&lt;br&gt;
         </format>
     </part>
     <part name="选择器">
