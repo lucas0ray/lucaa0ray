@@ -3,7 +3,7 @@ $(function(){
     $("#input-button").click(function(){
 
         var javadeta=$("#input-text").val()
-        var html ='<tr><td>介绍</td><td>代码</td></tr>'
+        var html ='<tr><th>介绍</th><th>代码</th></tr>'
 
         $("#table-01").empty()
         $("#table-01").append(html)
