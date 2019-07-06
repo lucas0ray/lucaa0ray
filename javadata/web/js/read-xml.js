@@ -1,53 +1,43 @@
 $(function(){
+
     $("#input-button").click(function(){
+
         var javadeta=$("#input-text").val()
-        alert(javadeta)
-        $("#div-01").empty()
+        var html ='<tr><td>介绍</td><td>代码</td></tr>'
 
-      
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $("#table-01").empty()
+        $("#table-01").append(html)
 
         $.ajax({
             type: "get",
             url: "javadata/web/xml/css.xml",
             dataType: "xml",
             success: function (xml) {
-                alert(javadeta)
+
                 $(xml).find("part").each(function() {
+
                     var part = $(this);
                     var name = part.attr("name")
-                    alert(name)
+
                     if($.trim(name) == $.trim(javadeta)){
+
                         var title = part.find("title").text();
                         var format = part.find("format").text();
-                        var html ='<div class="row">'
-                        +'<div class="col-md-6">#{title}</div>'
-                        +'<div class="col-md-6">#{format}</div>'
-                        +'</div>'
+                        var html ='<tr><td>#{title}</td><td>#{format}</td></tr>'
+                        
                         html = html.replace(/#{title}/g,title)
                         html = html.replace(/#{format}/g,format)
-                        $("#div-01").append(html)
+                        
+                        $("#table-01").append(html)
+
                     }
+
                 }) 
+
             }
+
         })
+
       })
+      
 })
