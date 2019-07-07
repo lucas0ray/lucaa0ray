@@ -8,7 +8,6 @@ function onclick0 (x,judge){
     $('#input-button').removeAttr("disabled")
     empty_div_01.empty_table()
 
-
     switch(judge) {
         case 1:
             filename="java"
