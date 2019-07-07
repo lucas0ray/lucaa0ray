@@ -9,11 +9,28 @@
     border-color: #ccc;
 }
 
-.padding-0{
-    padding: 0px
-}
-
-#div-01{
+#div-row-0>div,#div-th-border-0>div{
     margin-right: 0px;
     margin-left: 0px;
+}
+.div-th-border-0>table,#div-th-border-0 td,#div-input th{
+    border-top:1px solid rgba(221, 221, 221, 0);
+    border:1px solid rgba(221, 221, 221, 0);
+    margin-bottom: 0px;
+}
+#div-th-border-0 input{
+    width: 100%;
+}
+h2{
+    margin-bottom: 20px;
+}
+.table{
+    margin-bottom: 0px;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#div-hr-margin-bottom-20{
+    margin-bottom: 15px;
 }
