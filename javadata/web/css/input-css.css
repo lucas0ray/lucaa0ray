@@ -1,0 +1,10 @@
+/* 设置字体颜色 */
+#div_span_prompt{
+    color: red;
+}
+
+/* 定义按钮背景与边框颜色 */
+.btn {
+    background-color: rgba(249, 249, 249, 0.8);
+    border-color: #ccc;
+}
