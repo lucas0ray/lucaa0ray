@@ -8,3 +8,12 @@
     background-color: rgba(249, 249, 249, 0.8);
     border-color: #ccc;
 }
+
+.padding-0{
+    padding: 0px
+}
+
+#div-01{
+    margin-right: 0px;
+    margin-left: 0px;
+}
