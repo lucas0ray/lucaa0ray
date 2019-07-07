@@ -31,11 +31,55 @@
     <part name="选择器">
         <title>伪类选择器</title>
         <format>
-            a:VISITED{}----访问过&lt;br&gt;
-            a:LINK{}----未访问&lt;br&gt;
-            a:HOVER{}----悬停状态&lt;br&gt;
-            a:ACTIVE{}----点击状态&lt;br&gt;
+            a:VISITED{}----访问过
+            a:LINK{}----未访问
+            a:HOVER{}----悬停状态
+            a:ACTIVE{}----点击状态
         </format>
+    </part>
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
+    </part>
+
+
+    <part name="颜色">
+        <title>颜色单词</title>
+        <format>color: green</format>
+    </part>
+    <part name="颜色">
+        <title>6位16进制</title>
+        <format>color: #ff0000</format>
+    </part>
+    <part name="颜色">
+        <title>3位16进制</title>
+        <format>color: #f00</format>
+    </part>
+    <part name="颜色">
+        <title>3位10进制</title>
+        <format>color: rgb(255,0,0)</format>
+    </part>
+    <part name="颜色">
+        <title>0-1越小越透明度大</title>
+        <format>color: rgba(255,0,0,0-1)</format>
+    </part>
+
+    
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
+    </part>
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
+    </part>
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
+    </part>
+    <part name="选择器">
+        <title>任意选择器</title>
+        <format>*{}</format>
     </part>
     <part name="选择器">
         <title>任意选择器</title>
