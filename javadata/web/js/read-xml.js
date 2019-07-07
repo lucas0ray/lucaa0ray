@@ -34,6 +34,7 @@ var read_xml
                         
                     }) 
                     table += html_table1
+                    $("#div-01").empty()
                     $("#div-01").append(table)
                 }
             
