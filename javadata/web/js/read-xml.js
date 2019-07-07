@@ -22,7 +22,7 @@ var read_xml
             
                             var title = part.find("title").text();
                             var format = part.find("format").text();
-                            var html ='<tr><td>#{title}</td><td>#{format}</td></tr>'
+                            var html ='<tr class="table table-bordered"><td>#{title}</td><td>#{format}</td></tr>'
                             
                             html = html.replace(/#{title}/g,title)
                             html = html.replace(/#{format}/g,format)
