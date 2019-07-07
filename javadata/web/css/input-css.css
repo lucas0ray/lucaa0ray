@@ -18,7 +18,7 @@
     border:1px solid rgba(221, 221, 221, 0);
     margin-bottom: 0px;
 }
-#div-th-border-0 input{
+#div-th-border-0 input,#input-text:ACTIVE{
     width: 100%;
     border:1px solid rgb(221, 221, 221);
 }
