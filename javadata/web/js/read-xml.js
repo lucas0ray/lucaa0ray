@@ -12,8 +12,8 @@ var read_xml
                 url: "javadata/web/xml/"+filename+".xml",
                 dataType: "xml",
                 success: function (xml) {
-                    
-                    empty_div_01.empty_table()
+
+                    var table = html_table0
             
                     $(xml).find("part").each(function() {
             
@@ -24,17 +24,17 @@ var read_xml
             
                             var title = part.find("title").text();
                             var format = part.find("format").text();
-                            var html ='<tbody><tr><td>#{title}</td><td>#{format}</td></tr></tbody>'
+                            var html ='<tr><td>#{title}</td><td>#{format}</td></tr>'
                             
                             html = html.replace(/#{title}/g,title)
                             html = html.replace(/#{format}/g,format)
+                            table += html
                             
-                            $("#div-01").append(html)
-            
                         }
-            
+                        
                     }) 
-            
+                    table += html_table1
+                    $("#div-01").append(table)
                 }
             
             })
