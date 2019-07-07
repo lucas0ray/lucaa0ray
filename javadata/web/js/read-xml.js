@@ -1,27 +1,27 @@
 var read_xml
 
 (function(){
-
+    
     read_xml = {
-
+        
         xml:function(){
-
+            
             $.ajax({
-
+                
                 type: "get",
                 url: "javadata/web/xml/"+filename+".xml",
                 dataType: "xml",
                 success: function (xml) {
-
+                    
                     var table = html_table0
-            
+                    
                     $(xml).find("part").each(function() {
-            
+                        
                         var part = $(this);
                         var name = part.attr("name")
-            
+                        
                         if($.trim(name).match(javadeta)){
-            
+                            
                             var title = part.find("title").text();
                             var format = part.find("format").text();
                             var html ='<tr><td>#{title}</td><td>#{format}</td></tr>'
@@ -36,6 +36,13 @@ var read_xml
                     table += html_table1
                     $("#div-01").empty()
                     $("#div-01").append(table)
+                },
+                error:function() {
+                    
+                    var span = '<span>没有查询到相关资料！</span>'
+                    $("#div_span_prompt").empty()
+                    $("#div_span_prompt").append(span)
+
                 }
             
             })
