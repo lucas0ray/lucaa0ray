@@ -9,7 +9,7 @@ var read_xml
             $.ajax({
 
                 type: "get",
-                url: "javadata/web/"+filename+"/css.xml",
+                url: "javadata/web/xml/"+filename+".xml",
                 dataType: "xml",
                 success: function (xml) {
             
