@@ -20,6 +20,7 @@
 }
 #div-th-border-0 input{
     width: 100%;
+    border:1px solid rgb(221, 221, 221);
 }
 h2{
     margin-bottom: 20px;
