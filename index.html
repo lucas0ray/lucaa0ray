@@ -8,10 +8,13 @@
 
     <link rel="stylesheet" href="javadata/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="javadata/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="javadata/web/css/input-css.css">
 
     <script src="javadata/jquery-3.4.1/jquery-3.4.1.min.js"></script>
     <script src="javadata/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="javadata/web/js/read-xml.js"></script>
+    <script src="javadata/web/js/input-ban.js"></script>
+    <script src="javadata/web/js/search.js"></script>
 
 </head>
 <body>
@@ -27,32 +30,75 @@
                 </h1>
         </div>
 
-        <div class="row">
-            <div class="col-md-12 text-left">
+        <div class="row" id="div-input">
+            <div class="col-md-2">
                 <span>
-                    首页
+                    <h4 class="text-center">
+                        <input class="btn col-md-12" type="button" value="首页" onclick="onclick0(this,0)" disabled="disabled">
+                    </h4>
                 </span>
             </div>
+            <div class="col-md-2">
+                    <span>
+                        <h4 class="text-center">
+                            <input class="btn col-md-12" type="button" value="Java" onclick="onclick0(this,1)">
+                        </h4>
+                    </span>
+            </div>
+            <div class="col-md-2">
+                <span>
+                    <h4 class="text-center">
+                        <input class="btn col-md-12" type="button" value="JavaScript" onclick="onclick0(this,2)">
+                    </h4>
+                </span>
+            </div>
+            <div class="col-md-2">
+                <span>
+                    <h4 class="text-center">
+                        <input class="btn col-md-12" type="button" value="CSS" onclick="onclick0(this,3)">
+                </h4>
+            </span>
+            </div>
+            <div class="col-md-2">
+                <span>
+                    <h4 class="text-center">
+                        <input class="btn col-md-12 background_color" type="button" value="HTML" onclick="onclick0(this,4)">
+                    </h4>
+                </span>
+            </div>
+            <div class="col-md-2">
+                <span>
+                    <h4 class="text-center">
+                        <input class="btn col-md-12" type="button" value="数据库" onclick="onclick0(this,5)">
+                    </h4>
+                </span>
+            </div>
+
         </div>
 
+        <div class="row"><hr></div>
+
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-6" id="div_span_prompt">
+                <span>请选择要查询的资料！</span>
+            </div>
+            <div class="col-md-6 text-center">
                 <table class="table">
                     <input type="text" name="java-deta" id="input-text">
-                    <input type="button" value="搜索" id="input-button">
+                    <input type="button" value="搜索" id="input-button" disabled="disabled">
                 </table>
             </div>
         </div>
 
-        <div class="row table-responsive"  id="div-01">
-                <table class="table table-bordered">
+        <div class="row table-responsive" id="div-01">
+                <table class="table table-bordered table-striped" id="table-01">
                     <tr>
-                        <th>介绍</th>
-                        <th>代码</th>
+                        <th class="text-center">介绍</th>
+                        <th class="text-center">代码</th>
                     </tr>
                 </table>
         </div>
-        
+
     </div>
     
 </body>
