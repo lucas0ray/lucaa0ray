@@ -1,8 +1,9 @@
+var javadeta
+
 $(function(){
 
     $("#input-button").click(function(){
-
-        var javadeta=new RegExp($("#input-text").val())
+        javadeta=new RegExp($("#input-text").val())
         var html ='<table class="table table-bordered"><tr><th class="text-center">介绍</th><th class="text-center">代码</th></tr></table>'
 
         $("#div-01").empty()
