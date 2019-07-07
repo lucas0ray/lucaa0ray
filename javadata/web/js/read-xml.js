@@ -12,6 +12,8 @@ var read_xml
                 url: "javadata/web/xml/"+filename+".xml",
                 dataType: "xml",
                 success: function (xml) {
+                    
+                    empty_div_01.empty_table()
             
                     $(xml).find("part").each(function() {
             
