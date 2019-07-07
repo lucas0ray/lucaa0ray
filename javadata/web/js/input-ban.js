@@ -3,6 +3,8 @@ function onclick0 (x,judge){
     $("#div-input input").removeAttr("disabled")
     $(x).attr("disabled", "disabled")
     $('#input-button').removeAttr("disabled")
+    
+    empty_div_01.empty_table()
 
     switch(judge) {
         case 1:
