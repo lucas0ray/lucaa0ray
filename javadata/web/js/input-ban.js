@@ -6,8 +6,8 @@ function onclick0 (x,judge){
     $("#div-input input").removeAttr("disabled")
     $(x).attr("disabled", "disabled")
     $('#input-button').removeAttr("disabled")
-    read_xml.xml()
     empty_div_01.empty_table()
+
 
     switch(judge) {
         case 1:
@@ -35,6 +35,15 @@ function onclick0 (x,judge){
             $("#div_span_prompt>span").show()
             $("#div_span_prompt").empty()
             $("#div_span_prompt").append(span)
+            break;
+    }
+
+    switch (judge) {
+        case 0:
+            break;
+    
+        default:
+            read_xml.xml()
             break;
     }
 }
