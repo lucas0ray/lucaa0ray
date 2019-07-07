@@ -1,9 +1,12 @@
 var filename
+
 function onclick0 (x,judge){
+
+    var span = '<span>请选择要查询的资料！</span>'
     $("#div-input input").removeAttr("disabled")
     $(x).attr("disabled", "disabled")
     $('#input-button').removeAttr("disabled")
-    
+    read_xml.xml()
     empty_div_01.empty_table()
 
     switch(judge) {
@@ -30,6 +33,8 @@ function onclick0 (x,judge){
         default:
             $('#input-button').attr("disabled", "disabled")
             $("#div_span_prompt>span").show()
+            $("#div_span_prompt").empty()
+            $("#div_span_prompt").append(span)
             break;
     }
 }
